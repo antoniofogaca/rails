@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Código:</strong>
+  <%= @appwebexemp.id_seq %>
+</p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @appwebexemp.nome %>
+</p>
+
+<p>
+  <strong> Nascimento:<strong>
+  <%= @appwebexemp.nascimento %>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @appwebexemp.endereco %>
+</p>
+
+<p>
+  <strong>Preco:</strong>
+  <%= @appwebexemp.preco %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @appwebexemp.email %>
+</p>
+
+<p>
+  <strong>Telefone:</strong>
+  <%= @appwebexemp.telefone %>
+</p>  
+
+<%= link_to 'Alterar', edit_appwebexemp_path(@appwebexemp) %> |
+<%= link_to 'Votar', appwebexemps_path %>

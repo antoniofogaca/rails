@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<%= render 'shared/menu'%>
+
+   <h1>Lista de Clientes</h1>
+
+
+  <table id="example" class="table table-striped table-bordered" style="width:100%">
+  <thead class:"thead-light">
+    <tr>
+      <th>Código</th>
+      <th>Nome</th>
+      <th>Nascimento</th>
+      <th>Endereco</th>
+      <th>Preco</th>
+      <th>Email</th>
+      <th>Telefone</th>
+
+
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @appwebexemps.each do |appwebexemp| %>
+      <tr>
+        <td><%= appwebexemp.id_seq %></td>
+        <td><%= appwebexemp.nome %></td>
+        <td><%= appwebexemp.nascimento %></td>
+        <td><%= appwebexemp.endereco %></td>
+        <td><%= appwebexemp.preco %></td>
+        <td><%= appwebexemp.email %></td>
+        <td><%= appwebexemp.telefone %></td>
+        <td>
+        <%= link_to 'Mostrar', appwebexemp %> 
+        <%= link_to 'Alterar', edit_appwebexemp_path(appwebexemp) %> 
+        <%= link_to 'Excluir', appwebexemp, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br> 
+
+<%= link_to 'Cadastrar', new_appwebexemp_path, class: "btn btn-primary" %>
+
