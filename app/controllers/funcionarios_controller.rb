@@ -4,7 +4,7 @@ class FuncionariosController < ApplicationController
   # GET /funcionarios
   # GET /funcionarios.json
   def index
-    @funcionarios = Funcionario.all
+    @funcionarios = Funcionario.where("cpf like ?", "%#{params[:filtro_descricao]}%")
   end
 
   # GET /funcionarios/1
@@ -69,6 +69,6 @@ class FuncionariosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def funcionario_params
-      params.require(:funcionario).permit(:nome, :cpf, :nome, :endereco, :bairro, :municipio, :uf, :cep, :celular)
+      params.require(:funcionario).permit(:nome, :cpf, :endereco, :bairro, :municipio, :uf, :cep, :celular)
     end
 end

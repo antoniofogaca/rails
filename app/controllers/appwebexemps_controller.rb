@@ -28,7 +28,7 @@ class AppwebexempsController < ApplicationController
 
     respond_to do |format|
       if @appwebexemp.save
-        format.html { redirect_to @appwebexemp, notice: 'Appwebexemp was successfully created.' }
+        format.html { redirect_to @appwebexemp, notice: 'Cadastrado com sucesso!.' }
         format.json { render :show, status: :created, location: @appwebexemp }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class AppwebexempsController < ApplicationController
   def update
     respond_to do |format|
       if @appwebexemp.update(appwebexemp_params)
-        format.html { redirect_to @appwebexemp, notice: 'Appwebexemp was successfully updated.' }
+        format.html { redirect_to @appwebexemp, notice: 'Atualizado com sucesso!.' }
         format.json { render :show, status: :ok, location: @appwebexemp }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class AppwebexempsController < ApplicationController
   def destroy
     @appwebexemp.destroy
     respond_to do |format|
-      format.html { redirect_to appwebexemps_url, notice: 'Appwebexemp was successfully destroyed.' }
+      format.html { redirect_to appwebexemps_url, notice: 'Excluido com sucesso!.' }
       format.json { head :no_content }
     end
   end
