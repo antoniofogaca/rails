@@ -4,7 +4,7 @@ class FuncionariosController < ApplicationController
   # GET /funcionarios
   # GET /funcionarios.json
   def index
-    @funcionarios = Funcionario.where("cpf like ?", "%#{params[:filtro_descricao]}%")
+    @funcionarios = Funcionario.where(" nome like ?", "%#{params[:filtro_descricao]}%") 
   end
 
   # GET /funcionarios/1

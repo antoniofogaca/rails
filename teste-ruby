@@ -1,0 +1,12 @@
+puts 'informe o valor'
+x = gets.chomp.to_i
+if x > 2
+  puts 'x > 2'
+end
+
+x = 1
+unless x >= 2
+  puts ' x é menor que 2'
+else
+  puts ' x é < 2'
+end  
