@@ -14,7 +14,7 @@ class Pessoa
         attr_accessor :cnpj
 
         def pagar_fornecedor
-            puts "Efetuar pagamento"
+            "Efetuar pagamento"
         end    
     end
 
