@@ -5,6 +5,8 @@ gem 'ransack'
 gem 'bootstrap-sass'
 ruby '2.6.3'
 
+
+gem 'cpf_utils'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
@@ -64,3 +66,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+
+gem 'tty-spinner'
