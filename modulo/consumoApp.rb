@@ -12,6 +12,8 @@ req = RestClient::Request.execute(
    :payload => { :'numero_auto' => "20192702800017", :'matricula' => "0300149552", :'situacao' => "013" }
 )
 
+# Consumo de api via get
+
 # req = RestClient::Request.execute(
 #    :method => :get,
 #    :verify_ssl => false,
