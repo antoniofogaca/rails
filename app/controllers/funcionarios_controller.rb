@@ -36,7 +36,6 @@ class FuncionariosController < ApplicationController
       end
     end
   end
-
   # PATCH/PUT /funcionarios/1
   # PATCH/PUT /funcionarios/1.json
   def update
@@ -50,7 +49,6 @@ class FuncionariosController < ApplicationController
       end
     end
   end
-
   # DELETE /funcionarios/1
   # DELETE /funcionarios/1.json
   def destroy
